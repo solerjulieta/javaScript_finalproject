@@ -1,0 +1,294 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	background-color: #FF6633;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-end;
+}
+
+h1{
+	background: url("../imagenes/logo.png") no-repeat ;
+	width: 100px;
+	height: 21px;
+	font-size: 0;
+	margin: auto .5rem;
+}
+
+nav{margin-top:.9rem;}
+
+ul{display: flex;}
+
+ul li{
+	list-style: none;
+	font-family: 'Hind Madurai', sans-serif;
+	color: white;
+	margin-right: 2rem;
+    line-height: 0;
+}
+
+a{color: white;}
+
+a:hover{
+	color: #FFCC99;
+}
+
+.fondoBoton{
+	background-color: #FF6633;
+	color: white;
+}
+
+.fondoBoton2{
+	background-color: #FF9966;
+	color: black;
+}
+
+#banner a{
+	background-color:#FF9966;
+	border-radius: 50%;
+	text-decoration: none;
+	width:30px;
+	height:30px;
+	text-align:center;
+	position:absolute;
+	top: -15px;
+	right: -15px;
+	line-height: 30px;
+}
+
+#minicarrito{
+	background-color: #FFCC99;
+	margin: 1.5rem auto;
+	width: 20rem;
+	padding: 1rem;
+	font-weight: bold;
+}
+
+#minicarrito button{
+	background-color:#FF6633;
+	color:white;
+	
+}
+
+
+#modalCarrito h2, #modalDatos h2{
+	font-size:32px;
+	font-family: 'Dosis', sans-serif;
+}
+
+#modalCarrito p{
+	font-weight: bold;
+	font-family: 'Hind Madurai', sans-serif;
+	font-size:20px;
+}
+
+#modalCarrito ul{
+	display: flex;
+	flex-direction: column;
+}
+
+#modalCarrito ul li{
+	color: black;
+	font-size:18px;
+	margin-bottom: 1rem;
+}
+
+#modalCarrito a{
+	background-color:#FF6633;
+    position: fixed;
+	top: 1rem;
+	right: 1rem;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-decoration:none;
+	text-align:center;
+	line-height: 40px;
+    font-weight: bold;
+}
+
+#modalCarrito .alert{
+	height: 60px;
+	margin-top: 1.5rem;
+}
+
+#modalCarrito .btn{
+	margin-right: 1rem;
+}
+
+#modalProducto, #modalCarrito, #modalDatos{
+	position: fixed;
+	z-index: 5;
+	display: flex;
+	background-color: #ffcc99fa;
+	color: black;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align:center;
+	padding: 5rem;	
+}
+
+
+#productos .card img{
+	cursor: pointer;
+}
+
+.costo{
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+#modalDatos a, #modalProducto a{
+	background-color:#FF6633;
+    position: fixed;
+	top: 1rem;
+	right: 1rem;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-decoration:none;
+	text-align:center;
+	line-height: 40px;
+    font-weight: bold;	
+}
+
+#modalDatos h2{
+	margin-right: 5rem;
+}
+
+#modalProducto img{
+	border: solid #FF6633;
+	border-radius: 1rem;
+}
+
+#carrusel{
+	width:600px;
+	height:600px;
+}
+
+#modalProducto h2{
+	font-weight: bold;
+	font-size: 2rem;
+	margin-top: 1rem;
+	color:#FF6633;
+}
+
+#modalProducto h2 + p{
+	font-size: 1.5rem;
+}
+
+#modalProducto p:last-of-type{
+	width: 600px;
+	margin:auto;
+}
+
+#modalProducto .alert{
+	height: 60px;
+	margin-top: .5rem;
+	padding: 16px 2px;
+}
+
+#modalProducto .alert p{
+	font-size:1rem;
+}
+
+.antSig{
+	border-radius: 50%;
+	padding:0rem .6rem;
+	border:none;
+	font-weight: bold;
+	font-size:1.5rem;
+	margin: auto .5rem;
+}
+
+.inputValido{
+	outline: 2px solid rgb(36, 230, 36);
+}
+
+.inputNoValido{
+    outline: 2px solid rgb(243, 6, 6);
+}
+
+#pForm{
+	margin-top: 1rem;
+}
+
+.textoForm{
+	font-size: .8rem;
+}
+
+form p{
+	font-weight: bold;
+	font-size: .8rem;
+}
+
+fieldset{
+	border: solid 1px black;
+	margin-bottom: 1rem;
+}
+
+.aclaracion{
+	margin-bottom:0;
+	font-weight:normal;
+}
+
+.txtInfo{
+	font-weight: normal;
+	border:solid 1px black;
+	width:500px;
+}
+
+#gracias{
+  width: 400px;
+  height:400px;
+  background-color:#FFCC99;
+  color:black;
+  position:fixed;
+  left: calc(50% - 200px);
+  top: calc(50% - 200px);
+  z-index: 5;
+  text-align: center;
+  padding: 6rem .5rem;
+  display: none;
+  border-radius: 3%;
+}
+
+#gracias a{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	background-color:#FF6633;
+	position: absolute;
+	border-radius: 50%;
+	top: -15px;
+	right: -15px;
+	text-decoration: none;
+}
+
+#gracias:target{
+	display: block;
+}
+
+footer{
+	background-color: #FF6633;
+	height: 6rem;
+	padding: 2rem;
+	margin-top: 2rem;
+}
+
+footer ul{
+	display:flex;
+	justify-content: space-evenly;
+}
+
+footer ul li{
+	align-self: center;
+}
